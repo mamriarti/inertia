@@ -9,6 +9,15 @@ use Inertia\Inertia;
 */
 
 Route::get('/', function () {
-return inertia('Welcome');
+return Inertia::render('Home', [
+    'name' => 'Aleksandra',
+    'frameworks' => [
+        'Laravel',
+        'Vue',
+        'Inertia'
+    ]
+
+
+]);
 
 });
