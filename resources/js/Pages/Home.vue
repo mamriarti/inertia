@@ -1,14 +1,9 @@
 <template>
     <h1>Home</h1>
     <h2>Hello, {{ name }} </h2>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/users">Users</a></li>
-            <li><a href="/settings">Settings</a></li>
-        </ul>
-    </nav>
 
+
+   <Nav />
     <p>In this series, we will use the following frameworks:</p>
 
     <ul>
@@ -17,10 +12,14 @@
 </template>
 
 <script>
+    import Nav from "../Shared/Nav";
     export default {
+        components: { Nav },
         props: {
             name: String,
             frameworks: Array,
         },
     };
+
+
 </script>
