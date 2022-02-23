@@ -1,9 +1,9 @@
 <template>
-    <h1 class="text-4xl font-bold">Home</h1>
-    <h2>Hello, {{ name }} </h2>
-
-
-   <Nav />
+    <Layout>
+        <h1 class="text-3xl">
+            Home
+        </h1>
+    </Layout>
     <p>In this series, we will use the following frameworks:</p>
 
     <ul>
@@ -12,12 +12,13 @@
 </template>
 
 <script>
-    import Nav from "../Shared/Nav";
+    import Layout from "../Shared/Layout";
     export default {
-        components: { Nav },
+        components: { Layout },
         props: {
             name: String,
             frameworks: Array,
+
         },
     };
 

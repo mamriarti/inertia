@@ -1,11 +1,10 @@
 <template>
-    <h1>
-        Hello Users!
-    </h1>
-    <Nav />
-    <div style="margin-top: 400px">
-        <p>The current time is {{ time }}.</p>
-
+    <Layout>
+        <h1 class="text-3xl">
+            Users
+        </h1>
+        <div style="margin-top: 400px">
+            <p>The current time is {{ time }}.</p>
         <Link
             href="/users"
             class="text-blue-500"
@@ -13,13 +12,14 @@
         >
             Refresh
         </Link>
-    </div>
+        </div>
+    </Layout>
 </template>
 <script>
-    import Nav from "../Shared/Nav";
+    import Layout from "../Shared/Layout";
     import { Link } from "@inertiajs/inertia-vue3";
     export default{
-    components: { Nav, Link },
+    components: { Layout, Link },
         props: { time:String }
     } ;
 
