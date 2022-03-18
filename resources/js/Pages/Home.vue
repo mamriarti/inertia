@@ -11,16 +11,9 @@
     </ul>
 </template>
 
-<script>
+<script setup>
     import Layout from "../Shared/Layout";
-    export default {
-        components: { Layout },
-        props: {
-            name: String,
-            frameworks: Array,
-
-        },
-    };
+   
 
 
 </script>
