@@ -1,10 +1,17 @@
 <template>
-    <Layout>
+
         <h1 class="text-3xl">
             Settings
         </h1>
-    </Layout>
+
 </template>
-<script setup>
+
+<script>
     import Layout from "../Shared/Layout";
+    export default {
+        layout: Layout
+    }
+
+
+
 </script>

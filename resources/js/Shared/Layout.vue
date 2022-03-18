@@ -3,7 +3,7 @@
         <header class="flex justify-between">
             <div class="flex items-center">
                 <h1 class="font-bold text-lg">
-                    My App
+                    <input type="text" value="My App">
                 </h1>
 
                 <p class="text-sm ml-4">
@@ -17,6 +17,13 @@
 
     <section class="p-6">
         <div class="max-w-3xl mx-auto">
+
+            <iframe
+                class="mb-6"
+                width="100%"
+                frameborder="no"
+                scrolling="no"
+                seamless src="https://player.simplecast.com/dafc434a-9b89-4d3e-b7e4-b7e350cedf5a?dark=false"></iframe>
             <slot />
         </div>
     </section>

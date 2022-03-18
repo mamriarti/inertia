@@ -1,10 +1,11 @@
 <template>
-    <Layout>
-        <h1 class="text-3xl">
-            Users
-        </h1>
-        <div style="margin-top: 400px">
-            <p>The current time is {{ time }}.</p>
+    <h1 class="text-3xl">
+        Users
+    </h1>
+
+    <div style="margin-top: 400px">
+        <p>The current time is {{ time }}.</p>
+
         <Link
             href="/users"
             class="text-blue-500"
@@ -12,15 +13,13 @@
         >
             Refresh
         </Link>
-        </div>
-    </Layout>
+    </div>
 </template>
-<script setup>
+
+<script>
     import Layout from "../Shared/Layout";
-    import { Link } from "@inertiajs/inertia-vue3";
-    defineProps({
-
-     time:String
-    });
-
+    export default {
+        layout: Layout,
+        props: { time: String }
+    };
 </script>
